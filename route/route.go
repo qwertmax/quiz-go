@@ -12,9 +12,8 @@ func GetDB(c *gin.Context) *gorm.DB {
 }
 
 func Main(c *gin.Context) {
-	c.JSON(200, gin.H{
-		"status":  "ok",
-		"Message": "Upwork API of Burning Buttons",
+	c.HTML(200, "leyout", gin.H{
+		"test": "qqqqqq",
 	})
 }
 
